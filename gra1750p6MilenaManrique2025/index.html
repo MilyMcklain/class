@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bella Rossa - Milena Manrique 2025</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #1a1a1a;
+            color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper {
+            position: relative;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        #myVideo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+        header {
+            background-color: rgba(79,12,13,1.00);
+            text-align: center;
+            padding: 1.5rem 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        header img {
+            max-width: 500px;
+            height: auto;
+        }
+        nav {
+            background-color: #2d2d2d;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 1rem 2rem;
+            border-bottom: 2px solid #8B0000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        nav a {
+            color: #f8f9fa;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 1.2rem;
+            letter-spacing: 0.05rem;
+            padding: 0.5rem 1rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        nav a:hover {
+            color:#ffcccc;
+            transform:scale(1.1);
+            text-shadow: 1px 1px 2px rgba(255, 204, 204, 0.8);
+        }
+        .content {
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 3rem;
+        }
+        section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: #f8f9fa;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #8B0000;
+        }
+        section p {
+            line-height: 1.6;
+        }
+        .menu-section {
+            border: 1px solid #343a40;
+            padding: 1.5rem;
+            background-color: #292929;
+            border-radius: 8px;
+        }
+        .menu-section h2, .menu-section h3 {
+            text-align: center;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: #f8f9fa;
+            border-bottom: 2px solid #8B0000;
+            display: inline-block;
+        }
+        .menu-section ul {
+            padding: 0;
+            list-style-type: none;
+        }
+        .menu-section ul li {
+            margin: 1.5rem 0;
+        }
+        .menu-section img {
+            display: block;
+            margin: 0 auto 20px;
+            max-width: 90%;
+            height: auto;
+            border-radius:8px;
+        }
+        .menu-section strong {
+            display: block; 
+            margin-top: 10px; 
+            font-size: 1.1rem;
+            color: #f8f9fa;
+        }
+        .reservation-box {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+            margin-top: 2rem;
+        }
+        .reservation-box a {
+            text-decoration: none;
+        }
+        .reservation-box div {
+            background-color: #8B0000;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease,box-shadow 0.3s ease;
+        }
+        .reservation-box div:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .social-icons img {
+            width: 32px;
+            margin: 0 10px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            opacity: 0.8;
+        }
+        .social-icons img:hover {
+            transform: scale(1.2);
+            opacity: 1;
+        }
+        footer {
+            background-color: #2d2d2d;
+            color: #f8f9fa;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+        @media(min-width:1000px){
+            .wrapper {
+                width: 1000px;
+            }
+			li{
+				width:45%;
+			display:inline-block;
+			vertical-align: top;
+				margin:6px;
+				padding:13px
+			}
+            .two-columns {
+                display: flex;
+                justify-content: space-between;
+                gap: 1rem;
+            }
+            .two-columns section {
+                flex: 0 1 48%;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <video autoplay muted loop id="myVideo">
+            <source src="font-resturant.mp4" type="video/mp4">
+        </video>
+        <header>
+            <img src="logo.png" alt="Bella Rossa Logo">
+        </header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#menu">Menu</a>
+            <a href="#reservation">Reservations</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+        <div class="content">
+            <div class="two-columns">
+                <section id="home">
+                    <h2>Home</h2>
+                    <p>Welcome to Bella Rossa, where the artistry of fine dining meets a passion for flavor. Every dish we create is a masterpiece, designed to delight your taste buds and captivate your senses. Embark on a culinary journey with us, where every moment promises to be unforgettable.</p>
+                </section>
+                <section id="about">
+                    <h2>About Us</h2>
+                    <p>For over a decade, Bella Rossa has stood as a symbol of excellence in the culinary world. With its harmonious blend of elegance and warmth, our restaurant offers a unique dining atmosphere where attention to detail and personalized service are paramount.</p>
+                </section>
+            </div>
+            <section id="menu" class="menu-section">
+                <h2>Menu</h2>
+                <ul></ul>
+                <h3>Starters</h3>
+                <ul>
+                    <li>
+                        <img src="CARIBBEAN FUSION..webp" alt="Caribbean Fusion">
+						<ul></ul>
+                        <strong>Caribbean Fusion:</strong> Showcases smoky chorizo skewers infused with fine herbs, served with a vibrant white and green sauce.
+                    </li>
+                    <li>
+                        <img src="ROYAL SEA.webp" alt="Royal Sea">
+						<ul></ul>
+                        <strong>Royal Sea:</strong> Delicate fish balls perfectly seasoned with fine herbs, offering a blend of freshness and subtle elegance.
+                    </li>
+                </ul>
+                <h3>Main Course</h3>
+                <ul>
+                    <li>
+                        <img src="BARBADOS IN ITALY..webp" alt="Barbados in Italy">
+						<ul></ul>
+                        <strong>Barbados in Italy:</strong> Tender ravioli in a red sauce with fine herbs, paired with bold red wine.
+                    </li>
+                    <li>
+                        <img src="COSTA CASSEROLE.webp" alt="Costa Casserole">
+						<ul></ul>
+                        <strong>Costa Casserole:</strong> Creamy shrimp gratin with a golden crust, infused with herbs like parsley and tarragon.
+                    </li>
+                </ul>
+                <h3>Dessert</h3>
+				 <ul>
+                    <li>
+                        <img src="Molten Chocolate Lava Cake..jpg" alt="Molten Chocolate Lava Cake">
+						<ul></ul>
+                        <strong>Molten Chocolate Lava Cake:</strong> A dessert with a crisp outer layer revealing a warm, flowing chocolate center, often paired with ice cream.
+                    </li>
+					<li> 
+					<img src="Citrus Elegance.png" alt="Citrus Elegance">
+						<ul></ul>
+						 <strong>Citrus Elegance:</strong> A light, airy lemon soufflé with a golden caramelized top, garnished with fresh berries and edible flowers, delivering a vibrant and refined citrus experience.
+				</li>
+					 </ul> 
+            </section>
+            <section id="reservation">
+                <h2>Reservations</h2>
+               <p>Step into a world of sophistication and unforgettable moments. Reserve a table for an intimate dining experience or book an event to celebrate life’s most cherished occasions:</p>
+                <div class="reservation-box">
+                    <a href="#make-reservation">
+                        <div>Make a Reservation</div>
+                    </a>
+                    <a href="#book-event">
+                        <div>Book for Events</div>
+                    </a>
+                </div>
+            </section>
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>We value your interest in Bella Rossa. Whether you're planning an unforgettable evening or have questions about our menu, we’d love to hear from you!</p>
+                <p><strong>Phone:</strong> (123) 456-7890</p>
+                <p><strong>Email:</strong> contact@bellarossa.com</p>
+                <p><strong>Address:</strong> 123 Fine Dining Street, Gourmet City, FL 98765</p>
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="instragram.png" alt="Instagram Icon">
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank">
+                        <img src="twitter.png" alt="Twitter Icon">
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <img src="youtube.png" alt="YouTube Icon">
+                    </a>
+                </div>
+            </section>
+        </div>
+        <footer>
+			 <p><strong>Operating Hours:</strong></p>
+			<ul style="list-style-type: none; padding: 0;">
+                <li>Monday - Thursday: 12:00 PM - 10:00 PM</li>
+                <li>Friday - Saturday: 12:00 PM - 11:00 PM</li>
+                <li>Sunday: 12:00 PM - 9:00 PM</li>
+            <p>&copy;2025, Milena Manrique. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+            </ul>
+        </footer>
+    </div>
+	</body>
+</html>
